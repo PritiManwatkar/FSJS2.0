@@ -1,0 +1,122 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+}
+.container section:first-child
+{
+    height: 103px;
+}
+.navbar-container 
+{
+    display: flex; 
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    background-color:#FFFFFF; 
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.grow-list
+{
+    flex-grow: 1;
+}
+.list
+{
+  display: flex;
+  list-style:none;
+  justify-items: flex-start;
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top:20px ;
+  color: #C9C9C9;
+  font-size:15px;
+  background-color: #FFFFFF;
+}
+.list-item
+{
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.list-item:hover
+{
+    color: #424242;
+    cursor:pointer;
+}
+.button-group
+{
+    margin-top:10px ;
+}
+.nav-button
+{
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color:#5955B3;
+    width: 100px;
+    height: 40px;
+    border:none;
+}
+.nav-button:hover
+{
+    color:#5955B3;
+    background-color: #C9C9C9;;
+}
+.banner-container
+{
+    display: flex;
+}
+section div div:first-child
+{
+    width: 25%;
+    margin: 0px 0px 0px 0px;
+    padding-left: 60px; 
+}  
+.heading-text
+{
+    color:#3C2F60 ;
+    font-size: 40px;
+    padding-top: 100px;  
+    font-family: Verdana;
+}
+span
+{
+    color:#5955B3;
+}
+.description
+{
+    color: #929292;
+    font-size:12px;
+    padding-top: 30px;  
+    padding-right: 50px;
+    padding-bottom: 40px;
+    font-family: Calibri;
+}
+.btn
+{
+    width: 150px;
+    height: 40px;
+}
+section div div:last-child
+{
+    width: 75%;
+    padding-top: 40px;
+}
+section div div:last-child img
+{
+    width:1150px;
+}
+
