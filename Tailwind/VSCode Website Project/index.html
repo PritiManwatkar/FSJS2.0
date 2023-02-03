@@ -175,7 +175,7 @@
                 <p class="text-lg leading-loose pt-[30px]"><a href="#" class="text-blue-600 hover:underline">and many more languages on the Marketplace...</a></p>
                 <button class="bg-sky-600 w-[220px] h-[60px] text-lg hover:bg-sky-700 mt-[30px] text-white  font-bold">Get Started Now</button>
             </div>
-            <div class="grid grid-cols-3 grid-rows-3 items-center pl-[150px] pr-[150px] pt-[60px] pb-[60px] justify-between">
+            <div class="grid grid-cols-3 grid-rows-3 pl-[300px] pr-[250px] pt-[60px] pb-[60px] place-items-center gap-y-0">
                 <img src="./assets/windows.jpg" alt="" class="w-[130px] h-[130px]">
                 <img src="./assets/pengwin.jpg" alt="" class="w-[130px] h-[130px]">
                 <img src="./assets/apple.jpg" alt="" class="w-[130px] h-[130px]">
@@ -185,27 +185,113 @@
                     <button class="bg-sky-600 border-hidden h-[80px] w-[150px] hover:bg-sky-700 text-white font-bold"><span class="text-lg">&#10515;</span> .rpm<br><span class="text-sm font-normal">Red Hat, Fedora, SUSE</span></button>
                 </div>
                 <button class="bg-sky-600 border-hidden h-[80px] w-[250px] hover:bg-sky-700 text-white font-bold"><span class="text-lg">&#10515;</span> Mac<br><span class="text-sm font-normal">mcOS 10.11+</span></button>
-                <div class="grid grid-cols-4 grid-rows-4 items-center justify-between gap-x-1">
+                <div class="grid grid-cols-2 grid-rows-4 place-items-center auto-cols-min auto-rows-min mb-[50px]">
                     <span>User Installer</span>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[30px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
                     <span>System Installer</span>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[30px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
                     <span>.zip</span>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[30px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
                     <span>CLI</span>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
-                    <button class="bg-sky-600 border-hidden h-[20px] w-[30px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x86</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
                 </div>
-              
+                <div class="grid grid-cols-2 grid-rows-5 place-items-center auto-cols-min auto-rows-min mb-[40px]">
+                    <span>.deb</span>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm32</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
+                    <span>.rpm</span>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm32</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
+                    <span>.tar.gz</span>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm32</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
+                    <span>Snap</span>
+                    <div class="pr-10">
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[70px] hover:bg-sky-700 text-white text-xs rounded font-normal">Snap Store</button>
+                    </div>
+                    <span>CLI</span>
+                    <div>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[25px] hover:bg-sky-700 text-white text-xs rounded font-normal">x64</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm32</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[40px] hover:bg-sky-700 text-white text-xs rounded font-normal">Arm64</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 auto-cols-min auto-rows-min  place-items-center ml-[35px] mb-[100px]">
+                    <span class="w-[30px] mr-[110px]">.zip</span>
+                    <div class="w-[235px] mr-[100px]">
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[70px] hover:bg-sky-700 text-white text-xs rounded font-normal">Intel chip</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[80px] hover:bg-sky-700 text-white text-xs rounded font-normal">Apple silicon</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[70px] hover:bg-sky-700 text-white text-xs rounded font-normal">Universal</button>
+                    </div>
+                    <span class="w-[30px] mr-[110px]">CLI</span>
+                    <div class="w-[235px] mr-[100px]">
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[70px] hover:bg-sky-700 text-white text-xs rounded font-normal">Intel chip</button>
+                        <button class="bg-sky-600 border-hidden h-[20px] w-[80px] hover:bg-sky-700 text-white text-xs rounded font-normal">Apple silicon</button>
+                    </div>
+                </div>
+         
             </div>
+            <div class="bg-gray-100 pl-[150px] pr-[150px] pt-[60px] pb-[60px] flex flex-col items-center"> 
+                <div class="grid grid-cols-2 grid-rows-2 place-items-center w-[1050px]">
+                    <span class="text-xl text-gray-600 leading-loose font-bold">Want new features sooner?</span>
+                    <span class="text-xl text-gray-600 leading-loose font-bold">Use <a href="#" class="text-blue-600 hover:underline">vscode.dev</a> for quick edits online!</span>
+                    <span class="text-lg text-gray-600 leading-loose">Get the <a href="#" class="text-blue-600 hover:underline">Insiders build</a> instead.</span>
+                    <span class="text-lg text-gray-600 leading-loose">GitHub, Azure Repos, and local files.</span>
+                </div>
+                <div class="flex flex-col items-center mt-[80px] w-[750px]">
+                    <span class="text-xs text-gray-600 leading-10 font-bold">LICENSE AND PRIVACY TERMS</span>
+                    <span class="text-sm text-gray-600 leading-10">By downloading and using Visual Studio Code, you agree to the <a href="#" class="text-blue-600 hover:underline">license terms</a> and <a href="#" class="text-blue-600 hover:underline">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="#" class="text-blue-600 hover:underline">How to Disable Crash Reporting</a> to learn how to disable it.</span>
+                </div>
+            </div>
+           
         </section>
+    </section>
+    <section aria-label="footer">
+        <div class="bg-neutral-800 text-white h-20 w-full flex text-sm pl-[160px] pr-[180px] pt-[20px]">
+            <span>Hello from Seattle.</span>
+            <span class="ml-[20px]"><a href="#" class="hover:text-violet-500">Follow @code</a></span>
+            <button class="ml-[20px] bg-white text-black border-hidden  h-[20px] w-[50px] text-xs font-bold hover:text-gray-600 rounded" >Star</button>
+            <button class="ml-1 bg-white border-hidden h-[20px] w-[50px] text-xs text-black font-bold hover:text-gray-600 rounded">142,042</button>
+            <div class="grow">
+                <ul class="flex list-none justify-end font-sans text-xs font-normal">
+                    <li class=" mr-[10px] hover:text-violet-500"><a href="#">Support</a></li>
+                    <li class=" ml-[20px] mr-[10px] pl-[10px] hover:text-violet-500"><a href="#">Privacy</a></li>
+                    <li class=" ml-[20px] mr-[10px] pl-[10px] hover:text-violet-500"><a href="#">Terms of Use</a></li>
+                    <li class=" ml-[20px] mr-[30px] pl-[10px] hover:text-violet-500"><a href="#">License</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#" class="flex flex-col">
+                    <img src="./assets/microsoft-logo.png" alt="brand-logo"  class="w-[100px] h-[20px]"/>
+                </a>
+                <span class="text-xs font-sans leading-5">© 2023 Microsoft</span>
+            </div>
+        </div>
     </section>
 </body>
 </html>
