@@ -13,3 +13,6 @@
 6. [Use of split String function to convert String to Array](./Q6/)
 7. [lastIndexOf function](./Q7/)
 8. [trim function](./Q8/)
+9. [Truthy and Falsy values](./Q9/)
+10. [Comparison operators](./Q10/)
+11. [Date Object](./Q11/)
