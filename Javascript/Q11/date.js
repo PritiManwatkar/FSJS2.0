@@ -7,4 +7,16 @@
     - What is the minutes now?
     - Find out the numbers of seconds elapsed from January 1, 1970 to now.*/
 
+const currentdate=new Date();
 console.clear();
+console.log(`Current year is:${currentdate.getFullYear()}`);
+console.log(`Current month is:${currentdate.getMonth()}`);
+console.log(`Current date is:${currentdate.getDate()}`);
+console.log(`Current day is:${currentdate.getDay()}`);
+console.log(`Current hours are:${currentdate.getHours()}`);
+console.log(`Current minutes are:${currentdate.getMinutes()}`);
+console.log(`Numbers of seconds elapsed from January 1, 1970 to now are:${Date.now()/1000}`);
+console.log(`Numbers of seconds elapsed from January 1, 1970 to now are:${(currentdate.getTime()+(currentdate.getTimezoneOffset()*60*1000))/1000}`);
+
+
+
