@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Alerts and Conditions</title>
+    <script src="./calculator.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flexbox">
+        <label>Calculator:</label>
+        <input type="text" class="txtclass" id="calctext" disabled />
+        <input type="text" class="txtclass"  id="typetext"/>
+    </div>
+    <div class="gridbox">
+        
+        <button onclick="reset()" class="gridexpand">C</button>
+        <button onclick="updateText(this)">+</button>
+        <button onclick="updateText(this)">-</button>
+        <button onclick="updateText(this)">*</button>
+        <button onclick="updateText(this)">/</button>
+        <button onclick="updateText(this)">%</button>
+        <button onclick="printPattern()">+/-</button>
+        <button onclick="printPattern()">.</button>
+        <button onclick="getResult(this)">=</button>
+        <button onclick="addText(this)">1</button>
+        <button onclick="addText(this)">2</button>
+        <button onclick="addText(this)">3</button>
+        <button onclick="addText(this)">4</button>
+        <button onclick="addText(this)">5</button>
+        <button onclick="addText(this)">6</button>
+        <button onclick="addText(this)">7</button>
+        <button onclick="addText(this)">8</button>
+        <button onclick="addText(this)">9</button>
+        <button onclick="addText(this)">0</button>
+</div>
+</body>
+</html>
