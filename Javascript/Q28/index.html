@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Alerts and Conditions</title>
+    <script src="./pattern.js"></script>
+</head>
+<body>
+    <label>Please enter any number:</label><input type="number" min="1" max="50" value="3" id="num1"/><br/>
+    <label>Please select a pattern:</label><br/>
+    <input type="radio" name="pattern" value="Triangle" id="radio1" checked/><label for="radio1">Triangle</label><br/>
+    <input type="radio" name="pattern" value="Square" id="radio2"/><label for="radio1">Square</label> <br/>
+    <input type="radio" name="pattern" value="Pyramid" id="radio3"/><label for="radio1">Pyramid</label> <br/>
+    <button onclick="printPattern()">SUBMIT</button><br/>
+    <label>Pattern:</label><br/>
+    <div id="divpattern"></div>
+</body>
+</html>
