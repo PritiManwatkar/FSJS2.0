@@ -16,6 +16,7 @@ function reset()
 	isOperatorfired=false;
 	let isResultOb=false;
 }
+//when backspace button is pressed
 function backspace()
 {
 	if(isOperatorfired==false && isResultOb==false)
@@ -50,10 +51,10 @@ function backspace()
 //when operator button is pressed
 function operate(btn)
 {
+	num1.toString().lastIndexOf('.')==num1.toString().length-1?num1=num1.toString().substring(0,num1.toString().length-1):num1=num1;
 	//if num1,num2,operator are set
 	if(num2!=null && operat!=null)
 	{
-		num1.toString().lastIndexOf('.')==num1.toString().length-1?num1=num1.toString().substring(0,num1.toString().length-1):num1=num1;
 		num2.toString().lastIndexOf('.')==num2.toString().length-1?num2=num2.toString().substring(0,num2.toString().length-1):num2=num2;
 		document.getElementById("calctext").value=eval('('+num1+')'+operat+'('+num2+')')+btn.innerText;
 		document.getElementById("typetext").value=eval('('+num1+')'+operat+'('+num2+')');
@@ -63,7 +64,6 @@ function operate(btn)
 	}
 	else if(num2==null)
 	{
-		num1.toString().lastIndexOf('.')==num1.toString().length-1?num1=num1.toString().substring(0,num1.toString().length-1):num1=num1;
 		document.getElementById("calctext").value=num1+btn.innerText;
 		document.getElementById("typetext").value=num1;
 		operat=btn.innerText;
@@ -104,23 +104,23 @@ function getResult(btn)
 {
 	if(isResultOb==false)
 	{
-	//get current text
-	let currentex=document.getElementById("calctext").value;
-
-	let typetext=document.getElementById("typetext").value;
-	typetext.toString().lastIndexOf('.')==typetext.toString().length-1?typetext=typetext.toString().substring(0,typetext.toString().length-1):typetext=typetext;
-	//set complete current erpression in expression textbox
-	document.getElementById("calctext").value=currentex+typetext+btn.innerText;
-	//evaluate expresssion and show the result
-	document.getElementById("typetext").value=eval(currentex+'('+typetext+')');
-	//after calculating result treat next number pressed as new number
-	num1=document.getElementById("typetext").value;
-	num2=null;
-	operat=null;
-	isOperatorfired=false;
-	isResultOb=true;
+		//get current text
+		let currentex=document.getElementById("calctext").value;
+		let typetext=document.getElementById("typetext").value;
+		typetext.toString().lastIndexOf('.')==typetext.toString().length-1?typetext=typetext.toString().substring(0,typetext.toString().length-1):typetext=typetext;
+		//set complete current erpression in expression textbox
+		document.getElementById("calctext").value=currentex+typetext+btn.innerText;
+		//evaluate expresssion and show the result
+		document.getElementById("typetext").value=eval(currentex+'('+typetext+')');
+		//after calculating result treat next number pressed as new number
+		num1=document.getElementById("typetext").value;
+		num2=null;
+		operat=null;
+		isOperatorfired=false;
+		isResultOb=true;
 	}
 }
+//add decimal point
 function adddecimal()
 {
 	if(isOperatorfired==false && isResultOb==false)
@@ -128,7 +128,6 @@ function adddecimal()
 		let str=document.getElementById("typetext").value;
 		if (str.indexOf('.')<0)
 		{
-			alert("Hi");
 			document.getElementById("typetext").value=str+'.';
 			document.getElementById("calctext").value=str+'.';
 			num1=str+'.';
@@ -139,14 +138,12 @@ function adddecimal()
 		let str=document.getElementById("typetext").value;
 		if (str.indexOf('.')<0)
 		{
-			alert("Hii");
 			document.getElementById("typetext").value=str+'.';
 			num2=str+'.';
 		}
 	}
 	else if(isResultOb==true)
 	{
-		alert("Hiii");
 		document.getElementById("typetext").value='0.';
 		document.getElementById("calctext").value='';
 		num1='0.';
@@ -154,9 +151,9 @@ function adddecimal()
 }
 function addsign()
 {
+	let str=document.getElementById("typetext").value;
 	if(isOperatorfired==false && isResultOb==false)
 	{
-		let str=document.getElementById("typetext").value;
 		if (str!=0 && Math.sign(document.getElementById("typetext").value)>0)
 		{
 			document.getElementById("typetext").value='-'+str;
@@ -172,7 +169,6 @@ function addsign()
 	}	
 	else if(isOperatorfired==true && num2!=null)
 	{
-		let str=document.getElementById("typetext").value;
 		if (str!=0 && Math.sign(document.getElementById("typetext").value)>0)
 		{
 			document.getElementById("typetext").value='-'+str;
@@ -183,12 +179,9 @@ function addsign()
 			document.getElementById("typetext").value=str.substring(1, str.length);			
 			num2==str.substring(1, str.length);
 		}
-		
-		
 	}
 	else if(isResultOb==true)
 	{
-		let str=document.getElementById("typetext").value;
 		if (str!=0 && Math.sign(document.getElementById("typetext").value) > 0)
 		{
 			document.getElementById("typetext").value='-'+str;
