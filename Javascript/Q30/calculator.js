@@ -1,5 +1,8 @@
 /*Q30. Create a simple calculator program in JavaScript which can perform the addition, substraction, 
 multiplication and division on given numbers.*/
+let num1=0;
+let num2=null;
+let operat=null;
 let isOperatorfired=false;
 let isResultOb=false;
 //reset the values of all textboxes 
@@ -7,116 +10,196 @@ function reset()
 {
 	document.getElementById("calctext").value="";
 	document.getElementById("typetext").value="0";
+	num1=0;
+	num2=null;
+	operat=null;
 	isOperatorfired=false;
-	isResultOb=false;
+	let isResultOb=false;
 }
-//when operator button is pressed
-function updateText(btn)
+function backspace()
 {
-	//if equal to button is not fired already
-	if(document.getElementById("calctext").value.indexOf('=')<=0)
+	if(isOperatorfired==false && isResultOb==false)
 	{
-		//append the expression with new value and new operator
-		document.getElementById("calctext").value=document.getElementById("calctext").value+document.getElementById("typetext").value+btn.innerText;
-	}
-	else
+		let str=document.getElementById("typetext").value;
+		document.getElementById("typetext").value=str.substring(0, str.length-1);
+		document.getElementById("calctext").value=str.substring(0, str.length-1);
+		num1=str.substring(0, str.length-1);
+		if (document.getElementById("typetext").value.length==0)
+		{
+			document.getElementById("typetext").value=0;
+			num1=0;
+		}
+	}	
+	else if(isOperatorfired==true && num2!=null)
 	{
-		//set the expression with new calculated value and new operator
-		document.getElementById("calctext").value=document.getElementById("typetext").value+btn.innerText;
-	}
-	//set operator fired to true so that any upcoming number will be considered as new number and will not be appended to existing number
-	isOperatorfired=true;
-}
-//when number button is pressed
-function addText(btn)
-{
-	//save the current number value
-	let num=parseFloat(document.getElementById("typetext").value);
-	//if current number is not 0 and is proper number and operator button was not fired before it
-	if(document.getElementById("typetext").value.length==num.toString().length && num!=0 && isOperatorfired==false && isResultOb==false)
-	{
-		//append the new number button pressed  to the existing value
-		document.getElementById("typetext").value=document.getElementById("typetext").value+btn.innerText;
+		let str=document.getElementById("typetext").value;
+		document.getElementById("typetext").value=str.substring(0, str.length-1);
+		num2=str.substring(0, str.length-1);
+		if (document.getElementById("typetext").value.length==0)
+		{
+			document.getElementById("typetext").value=0;
+			num2=null;
+		}
 	}
 	else if(isResultOb==true)
 	{
-		//if operator button is pressed or 0 was already there or incorrect number was given,set new number
-		document.getElementById("typetext").value=btn.innerText;
 		document.getElementById("calctext").value="";
-		isOperatorfired=false;
-		isResultOb=false;
 	}
-	else
+	
+}
+//when operator button is pressed
+function operate(btn)
+{
+	//if num1,num2,operator are set
+	if(num2!=null && operat!=null)
 	{
-		//if operator button is pressed or 0 was already there or incorrect number was given,set new number
+		num1.toString().lastIndexOf('.')==num1.toString().length-1?num1=num1.toString().substring(0,num1.toString().length-1):num1=num1;
+		num2.toString().lastIndexOf('.')==num2.toString().length-1?num2=num2.toString().substring(0,num2.toString().length-1):num2=num2;
+		document.getElementById("calctext").value=eval('('+num1+')'+operat+'('+num2+')')+btn.innerText;
+		document.getElementById("typetext").value=eval('('+num1+')'+operat+'('+num2+')');
+		num1=document.getElementById("typetext").value;
+		operat=btn.innerText;
+		num2=null;
+	}
+	else if(num2==null)
+	{
+		num1.toString().lastIndexOf('.')==num1.toString().length-1?num1=num1.toString().substring(0,num1.toString().length-1):num1=num1;
+		document.getElementById("calctext").value=num1+btn.innerText;
+		document.getElementById("typetext").value=num1;
+		operat=btn.innerText;
+	}
+	isOperatorfired=true;
+	isResultOb=false;
+}
+//when number button is pressed
+function setnumber(btn)
+{
+	//save the current number value
+	if(num2==null && isOperatorfired==true)
+	{
+		num2=btn.innerText;
 		document.getElementById("typetext").value=btn.innerText;
-		isOperatorfired=false;
+	}
+	else if(num2!=null)
+	{
+		num2=num2+btn.innerText;
+		document.getElementById("typetext").value=num2;
+	}
+	else if(num2==null && isOperatorfired==false && isResultOb==false)
+	{
+		num1!=0?num1=num1+btn.innerText:num1=btn.innerText;
+		document.getElementById("calctext").value=num1;
+		document.getElementById("typetext").value=num1;
+	}
+	else if(num2==null && isOperatorfired==false && isResultOb==true)
+	{
+		num1=btn.innerText;
+		document.getElementById("calctext").value=num1;
+		document.getElementById("typetext").value=num1;
+		isResultOb=false;
 	}
 }
 //get the result of expression
 function getResult(btn)
 {
+	if(isResultOb==false)
+	{
 	//get current text
 	let currentex=document.getElementById("calctext").value;
-	//set complete current erpression in expression textbox
-	document.getElementById("calctext").value=document.getElementById("calctext").value+document.getElementById("typetext").value+btn.innerText;
-	//evaluate expresssion and show the result
-	document.getElementById("typetext").value=eval(currentex+document.getElementById("typetext").value);
-	//after calculating result treat next number pressed as new number
-	isResultOb=true;
-	
-}
-function printPattern()
-{
-	document.getElementById("divpattern").innerHTML="";
-    let num=document.getElementById("num1").value;
-    let radiolist=document.getElementsByName("pattern");
-	let pattern= Array.from(radiolist).find(radio => radio.checked).value;
-	switch(pattern)
-	{
-		case "Triangle":
-			for(let i=1;i<=num;i++)
-    		{
-				for(let j=1;j<=i;j++)
-				{
-        			document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"*";
-				}
-				document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"<br/>";
-			}
-			break;
-		case "Square":
-			for(let i=1;i<=num;i++)
-    		{
-				for(let j=1;j<=num;j++)
-				{
-        			document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"*";
-				}
-				document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"<br/>";
-			}
-			break;
-		case "Pyramid":
-			let i=1;
-			let k=1;
-			while(i<=num)
-    		{
-				if(k%2!=0)
-				{
-					for(let m=(num+1);m>=k;m--)
-					{
-						document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"&nbsp;";
-					}					
-					for(let j=1;j<=k;j++)
-					{
-						document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"*";
-					}
-					document.getElementById("divpattern").innerHTML=document.getElementById("divpattern").innerHTML+"<br/>";
-					i++;
-				}
-				k++;
-			}
-			break;
-	}
-    
-}
 
-        
+	let typetext=document.getElementById("typetext").value;
+	typetext.toString().lastIndexOf('.')==typetext.toString().length-1?typetext=typetext.toString().substring(0,typetext.toString().length-1):typetext=typetext;
+	//set complete current erpression in expression textbox
+	document.getElementById("calctext").value=currentex+typetext+btn.innerText;
+	//evaluate expresssion and show the result
+	document.getElementById("typetext").value=eval(currentex+'('+typetext+')');
+	//after calculating result treat next number pressed as new number
+	num1=document.getElementById("typetext").value;
+	num2=null;
+	operat=null;
+	isOperatorfired=false;
+	isResultOb=true;
+	}
+}
+function adddecimal()
+{
+	if(isOperatorfired==false && isResultOb==false)
+	{
+		let str=document.getElementById("typetext").value;
+		if (str.indexOf('.')<0)
+		{
+			alert("Hi");
+			document.getElementById("typetext").value=str+'.';
+			document.getElementById("calctext").value=str+'.';
+			num1=str+'.';
+		}
+	}	
+	else if(isOperatorfired==true && num2!=null)
+	{
+		let str=document.getElementById("typetext").value;
+		if (str.indexOf('.')<0)
+		{
+			alert("Hii");
+			document.getElementById("typetext").value=str+'.';
+			num2=str+'.';
+		}
+	}
+	else if(isResultOb==true)
+	{
+		alert("Hiii");
+		document.getElementById("typetext").value='0.';
+		document.getElementById("calctext").value='';
+		num1='0.';
+	}
+}
+function addsign()
+{
+	if(isOperatorfired==false && isResultOb==false)
+	{
+		let str=document.getElementById("typetext").value;
+		if (str!=0 && Math.sign(document.getElementById("typetext").value)>0)
+		{
+			document.getElementById("typetext").value='-'+str;
+			document.getElementById("calctext").value='-'+str;
+			num1='-'+str;
+		}
+		else if(str!=0)
+		{
+			document.getElementById("typetext").value=str.substring(1, str.length);
+			document.getElementById("calctext").value=str.substring(1, str.length);
+			num1=str.substring(1, str.length);
+		}
+	}	
+	else if(isOperatorfired==true && num2!=null)
+	{
+		let str=document.getElementById("typetext").value;
+		if (str!=0 && Math.sign(document.getElementById("typetext").value)>0)
+		{
+			document.getElementById("typetext").value='-'+str;
+			num2='-'+str;
+		}
+		else if(str!=0)
+		{
+			document.getElementById("typetext").value=str.substring(1, str.length);			
+			num2==str.substring(1, str.length);
+		}
+		
+		
+	}
+	else if(isResultOb==true)
+	{
+		let str=document.getElementById("typetext").value;
+		if (str!=0 && Math.sign(document.getElementById("typetext").value) > 0)
+		{
+			document.getElementById("typetext").value='-'+str;
+			document.getElementById("calctext").value='-'+str;
+			num1='-'+str;
+		}
+		else if (str!=0)
+		{
+			document.getElementById("typetext").value=str.substring(1, str.length);
+			document.getElementById("calctext").value=str.substring(1, str.length);
+			num1=str.substring(1, str.length);
+		}
+	}
+}

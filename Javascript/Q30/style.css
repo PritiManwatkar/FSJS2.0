@@ -15,19 +15,20 @@ body{
 .gridbox
 {
    display: grid;
-   grid-template-columns:100px 100px 100px;
+   grid-template-columns:80px 80px 80px 80px;
 
 
 }
-.gridexpand
+.btnimg
 {
-    grid-column:span 3;
+   width: 20px;
+   height: 20px; 
 }
 .flexbox
 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 320px;
 }
 .txtclass
 {

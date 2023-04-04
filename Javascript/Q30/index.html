@@ -12,29 +12,29 @@
     <div class="flexbox">
         <label>Calculator:</label>
         <input type="text" class="txtclass" id="calctext" disabled />
-        <input type="text" class="txtclass"  id="typetext"/>
+        <input type="text" class="txtclass"  id="typetext" value="0"/>
     </div>
     <div class="gridbox">
-        
-        <button onclick="reset()" class="gridexpand">C</button>
-        <button onclick="updateText(this)">+</button>
-        <button onclick="updateText(this)">-</button>
-        <button onclick="updateText(this)">*</button>
-        <button onclick="updateText(this)">/</button>
-        <button onclick="updateText(this)">%</button>
-        <button onclick="printPattern()">+/-</button>
-        <button onclick="printPattern()">.</button>
+        <button onclick="operate(this)">%</button>
+        <button onclick="reset()">C</button>  
+        <button onclick="operate(this)">/</button>                    
+        <button onclick="backspace(this)"><img src="./backspace.png" class="btnimg"/></button>        
+        <button onclick="setnumber(this)">7</button>
+        <button onclick="setnumber(this)">8</button>
+        <button onclick="setnumber(this)">9</button>
+        <button onclick="operate(this)">*</button>
+        <button onclick="setnumber(this)">4</button>
+        <button onclick="setnumber(this)">5</button>
+        <button onclick="setnumber(this)">6</button>
+        <button onclick="operate(this)">-</button>
+        <button onclick="setnumber(this)">1</button>
+        <button onclick="setnumber(this)">2</button>
+        <button onclick="setnumber(this)">3</button>
+        <button onclick="operate(this)">+</button>
+        <button onclick="addsign()">+/-</button>
+        <button onclick="setnumber(this)">0</button> 
+        <button onclick="adddecimal()">.</button>
         <button onclick="getResult(this)">=</button>
-        <button onclick="addText(this)">1</button>
-        <button onclick="addText(this)">2</button>
-        <button onclick="addText(this)">3</button>
-        <button onclick="addText(this)">4</button>
-        <button onclick="addText(this)">5</button>
-        <button onclick="addText(this)">6</button>
-        <button onclick="addText(this)">7</button>
-        <button onclick="addText(this)">8</button>
-        <button onclick="addText(this)">9</button>
-        <button onclick="addText(this)">0</button>
 </div>
 </body>
 </html>
