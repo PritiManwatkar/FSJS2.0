@@ -17,8 +17,8 @@ function getfileExtension()
 	}
 	else
 	{
-		alert("Extension of file is:"+strfilename.substring(strfilename.lastIndexOf('.'),strfilename.length));
-		console.log("Extension of file is:"+strfilename.substring(strfilename.lastIndexOf('.'),strfilename.length));
+		alert("Extension of file is: "+strfilename.substring(strfilename.lastIndexOf('.'),strfilename.length));
+		console.log("Extension of file is: "+strfilename.substring(strfilename.lastIndexOf('.'),strfilename.length));
 	}
 	
 }
