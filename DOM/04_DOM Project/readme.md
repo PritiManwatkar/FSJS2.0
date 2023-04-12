@@ -1,6 +1,6 @@
 # This is fourth project on DOM
 ## The project's purpose is to create same output as that of output file shared without touching given HTML code(index.html).
-### Task1 - DOM P1 SS.png file looks like:
+### DOM P1 SS.png file looks like:
 
 ![Output expected](./Output/DOM%20P1%20SS.png)
 
