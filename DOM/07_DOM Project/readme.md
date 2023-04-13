@@ -18,7 +18,6 @@ for(const i of vara)
 ```
 ### ass7.2-after.png file looks like:
 
-![Output expected](./ass7.1-after.png)
 ![Output expected](./ass7.2-after.png)
 
 ### For this following javascript code needs to be written which targets current HTML(index.html) to make it look like ass7.2-after.png file. 
