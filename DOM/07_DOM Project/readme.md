@@ -17,7 +17,7 @@ for(const i of vara)
     }
 }
 let varinput=document.querySelector(".main__form-input");
-varinput.value="Let us refresh page";
+varinput.value="iNeuron";
 let varform=document.querySelector("form"); 
 varform.submit();
 ```
