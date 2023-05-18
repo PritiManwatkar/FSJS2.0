@@ -1,0 +1,14 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Poppins";
+    color: rgb(75, 74, 74);
+  }
+  body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf1fd;
+  }

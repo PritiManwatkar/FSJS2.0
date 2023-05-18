@@ -9,5 +9,5 @@ let Country="India";
 let Age=35;
 
 console.clear();
-//Display using interpolation method(use backtick `) / template literal
+//Display using interpolation method(use backtick `) / template literal/template string
 console.log(`FirstName: ${Firstname}\nLastName: ${Lastname}\nMarital Status: ${Mstatus}\nCountry: ${Country}\nAge: ${Age}`);
