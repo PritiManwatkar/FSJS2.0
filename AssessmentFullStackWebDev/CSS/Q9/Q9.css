@@ -1,0 +1,38 @@
+td,th
+{
+  width:8vw;
+  height: 8vh;
+  text-align: center;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+.group1
+{
+  background-color: #FF9A9A;
+}
+.group2
+{
+  background-color: #9ACDFF;
+}
+.group3
+{
+  background-color: #FDFF8D;
+}
+.group4
+{
+  background-color: #9CFF9A;
+}
+th,
+td:empty,
+.star
+{
+  background-color: white;
+  height: 2vh;
+  width:2vw;
+  border: none;
+}
+.header
+{
+  text-align: left;
+}
