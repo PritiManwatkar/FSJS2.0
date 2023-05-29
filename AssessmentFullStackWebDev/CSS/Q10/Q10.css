@@ -1,0 +1,63 @@
+body
+{
+    background-color: #C4EBF9;
+    color: #FFFFFF;
+    font-size: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+header
+{
+
+    background-color: #02BFB1;
+    height: 10vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main
+{
+    display: flex;
+    margin-top: 3vh;
+    margin-top: 3vh;
+    height: 82vh;
+}
+aside
+{
+    background-color:#6EDB6E;
+    width: 25%;
+    margin-right: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+article
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    text-align: center;
+    background-color:#FBB04C;
+    width: 75%; 
+}
+.divImgC
+{
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-bottom: 2vh;    
+}
+.divImage
+{
+    background-color: #FCD24A;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+
