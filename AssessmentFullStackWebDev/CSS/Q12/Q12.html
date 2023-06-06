@@ -32,8 +32,13 @@
             </ul>
         </nav>
     </section>
-    <section id="banner"  class="mt-7">
+    <section id="banner" class="mt-7">
         <img src="./images/banner.png"/>
+        <div class="flex justify-between w-16 relative inset-x-1/2 bottom-10">   
+            <button class="rounded-full bg-white border-indigo-400 hover:bg-white w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-indigo-500 border-indigo-400 hover:bg-white w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-indigo-500  border-indigo-400 hover:bg-white w-2.5 h-2.5"></button>
+        </div>  
     </section>
     <section id="heading" class="mt-7 text-blue-900">
         <h1 class="text-2xl sm:text-3xl xl:text-5xl font-bold text-center mb-2">“Pure Hardwork, No Shortcuts!”</h1>
@@ -66,43 +71,357 @@
             <img src="./images/boeing.png" class="w-42 h-12 inline-block"/>
             <img src="./images/british-telecom.png" class="w-42 h-12 inline-block"/>
         </marquee>
-    </section>
-    
-    <section id="info2" class="flex flex-col items-center mt-16">
+    </section>    
+    <section id="info2" class="flex flex-col items-center mt-14 ">
         <h6 class="text-blue-900 mb-3 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Hall of fame</h6>          
-        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20">
-            <a href="#"><img src="./images/back.jpeg" class="w-12 h-10"/></a>             
-            <div class="flex flex-col items-center shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
-                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3"/>
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col items-center rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 ">
+                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3 rounded-full"/>
                 <h6 class="mb-3 text-2xl font-bold">Vaasu Bisht</h6>
                 <h6 class="text-base mb-3">i3 Digital Health, Data Science Intern</h6>
                 <p class="text-lg mb-7">I want to express gratitude to iNeuron because in-depth lectures and guidance by iNeuron I was able to crack a Data Science Internship in my first year of UG only.</p>
                 <a href="#" class="mb-3"><img src="./images/linkedin.jpeg" class="w-16 h-6"/></a>
             </div>
-            <div class="flex flex-col items-center shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
-                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3"/>
+            <div class="hidden sm:flex sm:flex-col sm:items-center xl:flex xl:flex-col xl:items-center rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
+                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3 rounded-full"/>
                 <h6 class="mb-3 text-2xl font-bold">Vaasu Bisht</h6>
                 <h6 class="text-base mb-3">i3 Digital Health, Data Science Intern</h6>
                 <p class="text-lg mb-7">I want to express gratitude to iNeuron because in-depth lectures and guidance by iNeuron I was able to crack a Data Science Internship in my first year of UG only.</p>
                 <a href="#" class="mb-3"><img src="./images/linkedin.jpeg" class="w-16 h-6"/></a>
             </div>
-            <div class="flex flex-col items-center shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
-                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3"/>
+            <div class="hidden sm:hidden xl:flex xl:flex-col xl:items-center rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
+                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3 rounded-full"/>
                 <h6 class="mb-3 text-2xl font-bold">Vaasu Bisht</h6>
                 <h6 class="text-base mb-3">i3 Digital Health, Data Science Intern</h6>
                 <p class="text-lg mb-7">I want to express gratitude to iNeuron because in-depth lectures and guidance by iNeuron I was able to crack a Data Science Internship in my first year of UG only.</p>
                 <a href="#" class="mb-3"><img src="./images/linkedin.jpeg" class="w-16 h-6"/></a>
-            </div>
-            <div class="flex flex-col items-center shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5">
-                <img src="./images/vasu.jpeg" class="w-40 h-40 mb-3"/>
-                <h6 class="mb-3 text-2xl font-bold">Vaasu Bisht</h6>
-                <h6 class="text-base mb-3">i3 Digital Health, Data Science Intern</h6>
-                <p class="text-lg mb-7">I want to express gratitude to iNeuron because in-depth lectures and guidance by iNeuron I was able to crack a Data Science Internship in my first year of UG only.</p>
-                <a href="#" class="mb-3"><img src="./images/linkedin.jpeg" class="w-16 h-6"/></a>
-            </div>
-            <a href="#"><img src="./images/next.jpg" class="w-12 h-10"/></a>
+            </div>           
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
         </div> 
-        
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
     </section>
+    <section id="info3" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Live Program</h1>
+        <h6 class="text-gray-800 mb-3 text-base sm:text-lg xl:text-xl ">Get your program with live "instructor led" learning.</h6>          
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/card1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Machine Learning Bootcamp</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">krish naik</h6>
+                <div class="flex flex-row">
+                    <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold grow">&#8377;6000.00</h6>
+                    <button class="mb-3 rounded border border-sky-200 bg-blue-300 text-blue-900 font-bold w-12">Live</button>
+                </div>
+            </div>
+            <div class="hidden sm:flex sm:flex-col xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/card1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Machine Learning Bootcamp</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">krish naik</h6>
+                <div  class="flex flex-row">
+                    <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold  grow">&#8377;6000.00</h6>
+                    <button class="mb-3 rounded border border-sky-200 bg-blue-300 text-blue-900 font-bold w-12">Live</button>
+                </div>
+            </div>
+            <div class="hidden sm:hidden xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/card1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Machine Learning Bootcamp</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">krish naik</h6>
+                <div  class="flex flex-row">
+                    <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold grow">&#8377;6000.00</h6>
+                    <button class="mb-3 rounded border border-sky-200 bg-blue-300 text-blue-900 font-bold w-12">Live</button>
+                </div>
+            </div>   
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
+        </div> 
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
+    </section>
+    <section id="info4" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Affordable Programs</h1>
+        <h6 class="text-gray-800 mb-3 text-base sm:text-lg xl:text-xl ">Find your favourite courses in pocket-friendly ways.</h6>          
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/affordable1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Java Bootcamp for Beginners</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Hitesh Choudhary</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;499.00</h6>               
+            </div>
+            <div class="hidden sm:flex sm:flex-col xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/affordable1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Java Bootcamp for Beginners</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Hitesh Choudhary</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;499.00</h6>     
+            </div>
+            <div class="hidden sm:hidden xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/affordable1.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Java Bootcamp for Beginners</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Hitesh Choudhary</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;499.00</h6>     
+            </div>   
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
+        </div> 
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
+    </section>
+    <section id="info5" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Community Programs</h1>
+        <h6 class="text-gray-800 mb-3 text-base sm:text-lg xl:text-xl ">Open to all pro-live classes on Youtube for free.</h6>          
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/community.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Web Automation Using Selenium Community Class</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Mukesh Otwani</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">FREE</h6>               
+            </div>
+            <div class="hidden sm:flex sm:flex-col xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/community.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Web Automation Using Selenium Community Class</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Mukesh Otwani</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">FREE</h6>        
+            </div>
+            <div class="hidden sm:hidden xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/community.jpg" class="mb-3"/>
+                <h6 class="mb-10 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Web Automation Using Selenium Community Class</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3">Mukesh Otwani</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">FREE</h6>       
+            </div>   
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
+        </div> 
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
+    </section>
+    <section id="info6" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">One Neuron</h1>
+        <h6 class="text-gray-800 mb-3 text-base sm:text-lg xl:text-xl ">New Neurons all day, every day.</h6>          
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/oneneuron.jpg" class="mb-3"/>
+                <h6 class="mb-2 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Tech Neuron</h6>
+                <h6 class="text-xs sm:text-sm xl:text-base mb-5 text-gray-500">200+ courses, 500+ projects, raise your demand option, consistent services from iNeuron, work 1:1 with experts</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;25000.00</h6>               
+            </div>
+            <div class="hidden sm:flex sm:flex-col xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/oneneuron.jpg" class="mb-3"/>
+                <h6 class="mb-2 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Tech Neuron</h6>
+                <h6 class="text-xs sm:text-sm xl:text-base mb-5 text-gray-500">200+ courses, 500+ projects, raise your demand option, consistent services from iNeuron, work 1:1 with experts</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;25000.00</h6>               
+            </div>
+            <div class="hidden sm:hidden xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/oneneuron.jpg" class="mb-3"/>
+                <h6 class="mb-2 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">Tech Neuron</h6>
+                <h6 class="text-xs sm:text-sm xl:text-base mb-5 text-gray-500">200+ courses, 500+ projects, raise your demand option, consistent services from iNeuron, work 1:1 with experts</h6>              
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;25000.00</h6>                
+            </div>   
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
+        </div> 
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
+    </section>
+    <section id="info7" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Test Series</h1>
+        <h6 class="text-gray-800 mb-3 text-base sm:text-lg xl:text-xl ">Quiz-based courses to prepare you for interviews.</h6>          
+        <div class="flex flex-row justify-between text-gray-800 p-4 mt-20 w-screen">
+            <a href="#" class="relative left-20 top-36 z-10"><img src="./images/back.jpeg" class="w-12 h-10 rounded-full"/></a>             
+            <div class="flex flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/testseries.jpg" class="mb-3"/>
+                <h6 class="mb-14 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">JavaScript Coding Interview Preparation</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;3540.00</h6>               
+            </div>
+            <div class="hidden sm:flex sm:flex-col xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/testseries.jpg" class="mb-3"/>
+                <h6 class="mb-14 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">JavaScript Coding Interview Preparation</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;3540.00</h6>          
+            </div>
+            <div class="hidden sm:hidden xl:flex xl:flex-col rounded-2xl border-gray-50 shadow-2xl shadow-gray-800/50 w-96 ml-5 mr-5 pl-6 pr-6 pt-8 pb-6">
+                <img src="./images/testseries.jpg" class="mb-3"/>
+                <h6 class="mb-14 text-base sm:text-lg xl:text-xl text-blue-900 font-bold">JavaScript Coding Interview Preparation</h6>
+                <h6 class="text-base sm:text-lg xl:text-xl mb-3 font-bold">&#8377;3540.00</h6>          
+            </div>   
+            <a href="#" class="relative right-20 top-36 z-10"><img src="./images/next.jpg" class="w-12 h-10 rounded-full"/></a>
+        </div> 
+        <a href="#" class="text-gray-800 mb-3 text-lg mt-10 font-bold">View More</a>     
+    </section>
+    <section id="info8" class="flex flex-col items-center mt-14 ">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Hackathon's We Conducted</h1>     
+        <img src="./images/picshackathon.jpg"/>
+        <div class="flex justify-between w-40">   
+            <button class="rounded-full bg-white border-gray-400 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+            <button class="rounded-full bg-white border-gray-300 hover:border-gray-400 border-r-2 border-b-2 border-t-2 border-l-0 shadow-2xl shadow-gray-800/50 w-2.5 h-2.5"></button>
+        </div>  
+    </section>
+    <section id="info9" class="flex flex-col items-center font-bold mt-16 bg-gray-200 h-96">
+        <h6 class="text-blue-900 mb-3 text-2xl sm:text-3xl xl:text-5xl mt-20">Hackathon Companies</h6>
+        <marquee class="mt-20">
+            <img src="./images/nvidia.png" class="w-42 h-12 inline-block"/>
+            <img src="./images/redis.png" class="w-42 h-12 inline-block"/>
+            <img src="./images/github.png" class="w-42 h-12 inline-block"/>
+            <img src="./images/jetbrains.png" class="w-42 h-12 inline-block"/>    
+            <img src="./images/geekyants.png" class="w-42 h-12 inline-block"/>
+            <img src="./images/musigma.png" class="w-42 h-12 inline-block"/>
+        </marquee>
+    </section>  
+    <section id="info10" class="flex flex-col items-center mt-14">
+        <h1 class="text-blue-900 mb-5 text-2xl sm:text-3xl xl:text-5xl mt-10 font-bold">Our Products</h1>     
+        <div  class="flex flex-row flex-wrap justify-center mt-16">
+            <div class="flex flex-col items-center w-96 mr-10 ml-10 mb-10">
+                <img src="./images/neurolab-icon.svg" class="w-40 h-40"/>
+                <h6 class="text-blue-900 mb-7 text-xl sm:text-2xl xl:text-3xl font-bold ">Neuro Lab</h6>
+                <p class="text-stone-800 text-sm sm:text-base xl:text-lg w-80">Supercharge your project development with our robust lab.</p>
+            </div>
+            <div class="flex flex-col items-center w-96 w-96 mr-10 ml-10 mb-10">
+                <img src="./images/jobPortal-icon.svg" class="w-80 h-40"/>
+                <h6 class="text-blue-900 mb-7 text-xl sm:text-2xl xl:text-3xl font-bold ">Job Portal</h6>
+                <p class="text-stone-800 text-sm sm:text-base xl:text-lg w-80">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+            </div>
+            <div class="flex flex-col items-center w-96 w-96 mr-10 ml-10 mb-10">
+                <img src="./images/Internship-icon.svg" class="w-80 h-40"/>
+                <h6 class="text-blue-900 mb-7 text-xl sm:text-2xl xl:text-3xl font-bold ">Internship portal</h6>
+                <p class="text-stone-800 text-sm sm:text-base xl:text-lg w-80">iNeuron's self-paced internship portal prioritises hands-on training with 570+ internship projects.</p>
+            </div>
+            <div class="flex flex-col items-center w-96 w-96 mr-10 ml-10 mb-10">
+                <img src="./images/affilitatePortal-icon.svg" class="w-80 h-40"/>
+                <h6 class="text-blue-900 mb-7 text-xl sm:text-2xl xl:text-3xl font-bold ">Become an affiliate</h6>
+                <p class="text-stone-800 text-sm sm:text-base xl:text-lg w-80">Explore affiliate marketing opportunities with iNeuron and attain financial frredom.</p>
+            </div>
+            <div class="flex flex-col items-center w-96 w-96 mr-10 ml-10 mb-10">
+                <img src="./images/halloffame-icon.svg" class="w-40 h-40"/>
+                <h6 class="text-blue-900 mb-7 text-xl sm:text-2xl xl:text-3xl font-bold ">Hall of fame</h6>
+                <p class="text-stone-800 text-sm sm:text-base xl:text-lg w-80">Our student placements and 100K+ career transitions speak volumes about our courses.</p>
+            </div>
+        </div>  
+    </section>
+    <section id="info11" class="flex flex-col items-center font-bold mt-10 pb-10">
+        <h6 class="text-blue-900 mb-12 text-2xl sm:text-3xl xl:text-5xl mt-10">Our Partnered Institutions</h6>
+       <div class="flex justify-evenly flex-wrap w-full">
+            <img src="./images/taxila.svg" class="w-40"/>
+            <img src="./images/vit.svg" class="w-40"/>
+            <img src="./images/keit.svg" class="w-40"/>
+            <img src="./images/gim.svg" class="w-40"/>    
+            <img src="./images/malnad-college.svg" class="w-40"/>
+       </div>
+    </section> 
+    <footer class="bg-blue-900 flex justify-start flex-wrap mt-10 pt-24 pr-24 pl-10 sm:pl-20 xl:pl-24 pb-10 text-gray-200 text-sm sm:text-base xl:text-lg">
+        <div class="mr-36">
+            <img src="./images/ineuron-logo-white.png" class="mb-5"/>
+            <div class="flex w-40 justify-between mb-3">
+                <!-- Facebook -->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hover:fill-orange-500" fill="white" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                </a>
+                <!-- Twitter -->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hover:fill-orange-500" fill="white" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </a>    
+                <!-- Linkedin -->
+                <a href="#">
+                    <svg stroke="currentColor" fill="white" class="h-6 w-7 hover:fill-orange-500" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill-rule="nonzero" d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <!-- Youtube -->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 hover:fill-orange-500" fill="white" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#">
+                    <svg stroke="currentColor" class="h-7 w-7 hover:fill-orange-500" fill="white" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill-rule="nonzero" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+                <!-- Discord -->
+                <a href="#">
+                    <svg class="h-7 w-6 hover:fill-orange-500" fill="white" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+                    </svg>
+                </a>
+            </div>
+            <hr class="bg-amber-600 h-0.5 w-60"/>
+            <div class="flex flex-col">
+                <div class="flex items-center">
+                    <svg stroke="currentColor" class="w-5 h-5" fill="white" stroke-width="0" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <a href="#" class="w-80 mt-5 mb-2 ml-5 hover:text-white">17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru, Karnataka 562129.</a>
+                </div>
+                <div class="flex items-center">
+                    <svg stroke="currentColor"  class="w-5 h-5" fill="white" stroke-width="0" viewBox="0 0 1024 1024"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M477.5 536.3L135.9 270.7l-27.5-21.4 27.6 21.5V792h752V270.8L546.2 536.3a55.99 55.99 0 0 1-68.7 0z"></path>
+                        <path d="M876.3 198.8l39.3 50.5-27.6 21.5 27.7-21.5-39.3-50.5z"></path>
+                        <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-94.5 72.1L512 482 190.5 232.1h643zm54.5 38.7V792H136V270.8l-27.6-21.5 27.5 21.4 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5h.1l39.3 50.5-27.7 21.5z"></path>
+                    </svg>
+                    <div class="mt-2 mb-2 ml-5 hover:text-white"><b>Email us:</b> <a href="mailto:contact@ineuron.ai">contact@ineuron.ai</a></div>
+                </div>
+                <div class="w-28">
+                    <img src="./images/iso-9001-2015.svg" class="w-28 h-28"/>
+                    <h6 class="text-center">ISO 9001</h6>
+                </div>
+            </div>
+        </div>
+        <div class="mr-36">
+            <h6 class="text-xl sm:text-2xl xl:text-3xl font-bold mb-3">Company</h6>
+            <hr class="bg-amber-600 h-0.5"/>
+            <div class="flex mt-5 mb-2">
+                <ul>
+                    <li class="mb-1"><a href="#" class="hover:text-white">About us</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Community</a></li>
+                    <li class="mb-3"><a href="#" class="hover:text-white">FAQs</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Job assistance</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Terms and conditions</a></li>
+                </ul>               
+                <ul class="ml-5">
+                    <li class="mb-1"><a href="#" class="hover:text-white">Contact us</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Hack-A-Thon</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Job guarantee</a></li>
+                    <li class="mb-1"><a href="#" class="hover:text-white">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h6 class="text-xl sm:text-2xl xl:text-3xl font-bold mb-3">Products</h6>
+            <hr class="bg-amber-600 h-0.5 w-44"/>
+            <div class="mt-5 mb-2">
+                <ul>
+                    <li><a href="#" class="hover:text-white">Neuro Lab</a></li>
+                    <li><a href="#" class="hover:text-white">Job Portal</a></li>
+                    <li class="mb-3"><a href="#" class="hover:text-white">Internship portal</a></li>
+                    <li><a href="#" class="hover:text-white">Become an affiliate</a></li>
+                    <li><a href="#" class="hover:text-white">Hall of fame</a></li>
+                </ul>               
+            </div>
+        </div>
+    </footer>  
+    <div class="fixed bottom-8 right-0 hover:cursor-pointer">
+        <img src="./images/163-r-br.svg" class="w-36 h-36"/>
+    </div> 
+    <button type="button" class="border rounded-full border-amber-500 bg-amber-500 w-16 h-16 fixed bottom-0 right-1.5" >
+        <div class="relative left-4">
+            <!---->
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 800 800" class="w-7 h-7" role="img" alt="Chat icon" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"></path>
+                </svg>
+            </div>
+        </div>
+    </button> 
 </body> 
 </html>
