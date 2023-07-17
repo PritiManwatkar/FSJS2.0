@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+    <title>Blog</title>
+</head>
+<body onload="Getdata()">
+    <h1 class="text-6xl font-bold text-center pb-10 box-border">Welcome to my blog</h1>
+    <a href="#" onclick="show()" class="m-12 underline text-blue-400">New Post</a>
+    <div class="grid grid-cols-2 hidden bg-orange-200 w-1/2 m-12" id="divNewpost">
+        <label class="mt-5 ml-5 mb-2">Title: </label>
+        <input type="text" id="txtTitle" class="border border-solid bg-white mt-5 mr-5 mb-2"/>
+        <label class="ml-5 mb-2">Description: </label>
+        <textarea id="txtDesc" class="border border-solid bg-white mb-2 mr-5"></textarea>
+        <button onclick="saveData()" class="border border-solid bg-amber-400 rounded pl-2 pr-2 mt-5 ml-5 mb-2 col-span-2 h-10 w-20">Save</button>
+    </div>
+    <main class="flex flex-wrap" id="blogposts">
+
+    </main>
+</body>
+</html>
